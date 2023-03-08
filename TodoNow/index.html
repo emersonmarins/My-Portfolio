@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    
+
+    <div class="container-principal">
+        <header class="todo-header">
+            <h1>Todo Now</h1>
+            <div class="form-todo-list" action="" method="post">
+                
+                <div class="add-tarefa">
+                    <label for="tarefa">Adicione sua tarefa</label>
+                    <form action="" method="post" class="generic">
+                        <input type="text" id="new-tarefa" name="new-tarefa" placeholder="Digite sua tarefa">
+                        <button class="btn-new-tarefa"><i class="fa-solid fa-plus"></i></button>
+                    </form>
+                </div>
+
+                <div class="search">
+                    <label for="search">Pesquisar</label>
+                    <form action="http://127.0.0.1:5500/index.html" method="post" class="generic search-form">
+                        <input type="search" id="search" name="search">
+                        <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+               
+                <div class="filter">
+                    <label for="select-filter">Filtrar</label>
+                    <select name="select-filter" id="select-filter">
+                        <option value="todas">Todas</option>
+                        <option value="concluidas">Concluídas</option>
+                        <option value="pendentes">Pendentes</option>
+                    </select>
+                </div>
+
+            </div>
+        </header>
+        <main class="main-todo-list">
+            <!-- <form action="" method="post" class="div-tarefas">
+                <p class="tarefas"> Tarefa exemplo</p>
+                <button class="check-btn one"><i class="fa-solid fa-circle-check "></i></button>
+                <button class="edit-btn two"><i class="fa-solid fa-pen "></i></button>
+                <button class="del-btn tree"><i class="fa-solid fa-trash "></i></button>
+            </form> -->
+        </main>
+        <div class="edit-tarefa hidde">
+            <form action="" class="form-edit">
+                <label for="edit-tarefa">Editar Tarefa</label>
+                <input type="text" placeholder="" value="" id="edit-tarefa">
+                <label for="text-tarefa">Anotações</label>
+                <textarea name="text-tarefa" id="text-tarefa" cols="30" rows="10"></textarea>
+                <div class="buttons">
+                    <button class="btn-edit-tarefa">Salvar</button>
+                    <button class="btn-return">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
