@@ -17,27 +17,53 @@
 
     }
 
-    body {
+    a {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        text-decoration: none;
+        background-color: rgb(16, 16, 16);
+        padding: 7px 21px;
+        border-radius: 5px;
+        border: 1px solid rgba(253, 253, 253, 0.778);
+        color: rgb(254, 254, 254);
+        font-size: 21px;
+        transition: 0.5s ease-in-out;
 
+    }
+
+    a:hover {
+        position: absolute;
+        top: 10px;
+        text-decoration: none;
+        font-size: 23px;
+        color: white;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+    }
+
+    body {
         height: 100vh;
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.993);
 
     }
 
     .designer {
-        margin-top: 50px;
+        margin-top: 70px;
         color: aliceblue;
         text-shadow: 1px 1px 2px blue;
-        /* box-shadow: 2px 2px 2px 2px blue; */
-        font-size: 3em;
-        transform: translateX(80vw);
-        animation: name-vision 8s infinite linear both;
+        width: 278px;
+        font-size: 1.5em;
+        animation: name-vision 14s infinite linear both;
 
     }
 
     @keyframes name-vision {
         0% {
-            transform: translateX(-560px);
+            transform: translateX(-278px);
             color: rgb(0, 135, 254);
             text-shadow: 1px 3px 10px blue;
             animation-timing-function: ease-in-out;
@@ -46,97 +72,108 @@
         100% {
             transform: translateX(100vw);
             color: rgb(255, 255, 255);
-            text-shadow: 1px 3px 10px rgb(0, 221, 255);        
+            text-shadow: 1px 3px 10px rgb(0, 221, 255);
         }
     }
 
+    
+        .container-geral {
+            position: relative;
+            height: 500px;
+            width: 400px;
+            margin: 10px 50%;
+            transform: translate(-45%);
+
+        }
     .container {
-    /* background-color: aqua; */
         position: absolute;
-        height: 60vh;
+        height: 60vw;
         width: 50vw;
-        top: 50vh;
-        left: 50vw;
-        /* Horizontal { X } || Vertial { Y } || Profundidade { Z } */
+        top: 20%;
+        left: calc(50% - 125px);
         transform: translateX(-50%) translateY(-50%);
         perspective: 1000px;
     }
-
+/* @media screen and (min-width: 300px) and (max-width: 700px) {
+ } */
     .box {
 
         position: absolute;
-        top: 35%;
-        left: 35%;
-        height: 250px;
-        width: 250px;
-        transform: translateX(-50%) translateY(-50%);
-        /* background-color: rgb(255, 255, 255); */
+        top: 50%;
+        left: 50%;
+        height: 200px;
+        width: 200px;
+        /* transform: rotateY(130deg) rotateX(-30deg); */
         transform-style: preserve-3d;
-        animation: animate 21s linear infinite;
+        animation: animate 14s linear infinite;
 
     }
 
     @keyframes animate {
         0% {
             transform: rotateX(-50deg) rotateY(0deg);
+
         }
 
         50% {
             transform: rotateX(50deg) rotateY(360deg);
+
         }
+
         100% {
             transform: rotateX(-50deg) rotateY(0deg);
+
         }
     }
 
 
     .card {
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         background: radial-gradient(rgb(0, 17, 255), rgb(12, 12, 44));
         box-shadow: 0px 0px 2px 2px rgba(4, 7, 46, 0.582);
         color: white;
-        font-size: 1.7em;
+        font-size: 1.4em;
         text-align: center;
         padding-top: 100px;
+        top: 50%;
+        left: 50%;
     }
 
     #top {
-        bottom: 125px;
-        transform: rotateX(90deg);
+        transform: rotateX(90deg) translateZ(200px) translate(-45%, 0%);
+
     }
 
     #right {
-        left: 125px;
-        transform: rotateY(90deg);
+        left: 100px;
+        transform: rotateY(90deg) translateZ(10px) translate(0%, -50%);
     }
 
     #left {
-        right: 125px;
-        transform: rotateY(-90deg);
+        transform: rotateY(-90deg) translateZ(190px) translate(0%, -50%);
     }
 
     #front {
-        transform: translateZ(125px);
+        transform: translateZ(100px)  translate(-45%, -50%);
     }
 
     #back {
-        
-        transform: rotateY(180deg) translateZ(125px);
+
+        transform: rotateY(180deg) translateZ(100px) translate(45%, -50%);
     }
 
     #bottom {
-        top: 125px;
 
-        transform: rotateX(-90deg);
+        transform: rotateX(-90deg) translate(-45%);
     }
-    
+
     #shadow {
-       
-        left: 35%;
-        background:rgb(0, 0, 255);
-        margin-top: 500px;
+
+        left: 50%;
+        background: rgb(0, 0, 255);
+        margin-top: 300px;
         filter: blur(40px);
         animation: animate-shadow 21s infinite linear;
 
@@ -145,80 +182,40 @@
 
     @keyframes animate-shadow {
         0% {
-            transform: rotateX(80deg) rotateZ(0deg) ;
+            transform: rotateX(80deg) rotateZ(0deg);
         }
 
         50% {
             transform: rotateX(79deg) rotateZ(-360deg);
         }
+
         100% {
             transform: rotateX(80deg) rotateZ(0deg);
         }
     }
-
-
-    /* 
-    .div-container {
-
-        background: linear-gradient(180deg, rgba(28, 76, 233, 0.274), rgba(29, 41, 66, 0.589));
-        width: 200px;
-    }
-
-    .div1 {
-        top:117px;
-        transform:rotate(5deg) ;
-    }
-
-    .div2 {
-        top: 100px;
-        transform:rotate(-5deg 5deg 5deg) ;
-
-    }
-
-    .div1, .div2 {
-    
-        background-color: rgba(13, 63, 97, 0.445);
-        height: 200px;
-        width: 200px;
-        border-radius: 14px;
-        box-shadow: 0px 1px 3px 1px rgba(15, 51, 88, 0.363);
-        
-    } */
 </style>
 
+
 <body>
-    <!-- <div class="div-container">
-        <div class="div1"></div>
-        <div class="div2"></div>
-    </div> -->
+    <a href="../index.html">Voltar</a>
     <div class="designer">Designer Emerson Marins</div>
 
-    <div class="container">
-        <div class="box">
-            <div class="card" id="top">Emerson Marins</div>
-            <div class="card" style="--i:0" id="front">front</div>
-            <div class="card" style="--i:1" id="right">right</div>
-            <div class="card" style="--i:2" id="back">back</div>
-            <div class="card" style="--i:3" id="left">left</div>
-            <div class="card" id="bottom">bottom</div>
-        </div>
-        <div >
-            <div class="card" id="shadow"></div>
-        </div>
+    <div class="container-geral">
+        <div class="container">
+            <div class="box">
+                <div class="card" id="top">Emerson Marins</div>
+                <div class="card" style="--i:0" id="front">front</div>
+                <div class="card" style="--i:1" id="right">right</div>
+                <div class="card" style="--i:2" id="back">back</div>
+                <div class="card" style="--i:3" id="left">left</div>
+                <div class="card" id="bottom">bottom</div>
+            </div>
+            <div>
+                <div class="card" id="shadow"></div>
+            </div>
+    </div>
     </div>
 
-    <script>
-        // let div1El = document.querySelector('.div1');
-        // let div2El = document.querySelector('.div2');
-
-        // let x = 0;
-        // setInterval(() => {
-
-        //     div1El.style.transform = `rotateX(${x++}deg) translateX(-70px)`;
-
-        // }, 33);
-
-    </script>
 </body>
 
 </html>
