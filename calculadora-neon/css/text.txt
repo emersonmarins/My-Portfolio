@@ -1,0 +1,9 @@
+   .1vw 0.1vw .25vw rgb(157, 240, 245), -.1vw -0.1vw .25vw rgb(157, 240, 245),
+
+    .1vw 0vw 0vw rgb(92, 243, 251), .2vw 0vw 0vw rgb(92, 243, 251),.4vw 0vw 0vw rgb(92, 243, 251),
+    .1vw 0vw .1vw rgb(92, 243, 251), .2vw 0vw .1vw rgb(92, 243, 251),.4vw 0vw .1vw rgb(92, 243, 251),
+    .1vw 0vw 2vw rgb(92, 243, 251), .2vw 0vw 2vw rgb(92, 243, 251),.4vw 0vw 2vw rgb(92, 243, 251),
+
+    .1vw 0vw 1vw rgb(92, 243, 251), .2vw 0vw 1vw rgb(92, 243, 251),.4vw 0vw 5vw rgb(92, 243, 251),
+    .1vw 0vw 5vw rgb(92, 243, 251), .2vw 0vw 20vw rgb(92, 243, 251),.4vw 0vw 10vw rgb(92, 243, 251),
+    .1vw 0vw 10vw rgb(92, 243, 251), .2vw 0vw 30vw rgb(92, 243, 251),.4vw 0vw 10vw rgb(92, 243, 251)

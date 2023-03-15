@@ -1,0 +1,203 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background: rgb(47, 47, 47);
+
+}
+
+.container-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px ;
+}
+
+
+.box1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0px 1px 3px 2px black;
+    border-radius: 14px;
+    width: 400px;
+    height: 700px;
+}
+
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aqua; */
+}
+.nav-bar > input {
+    height: 40px;
+    width: 280px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 7px;
+}
+
+.nav-bar > i {
+    /* position: absolute; */
+    background-color: black;
+    width: 35px;
+    height: 40px;
+    /* left: 0; */
+    margin-left: -35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: aliceblue;
+    padding: 11px 0px 7px 9px;
+
+
+}
+
+.title-curso {
+align-self: center;
+font-size: 1.7em;
+width: 280px;
+margin: 100px 0 20px;
+color: rgb(0, 221, 195);
+box-shadow: inset 0px 1px 3px 1px black;
+padding: 7px 0;
+text-align: center;
+text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.489);
+
+}
+
+.text {
+
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0px auto 30px;
+    box-shadow: inset 0px 1px 1px 1px rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(200, 200, 200);
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.buttons>button {
+
+    width: 250px;
+    height: 50px;
+    /* padding: 30px 10px; */
+    border-radius: 7px;
+    margin: 10px;
+    background: rgb(0, 223, 197);
+    /* box-shadow: 0px 1px 1px 1px black; */
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.545);
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(11, 10, 0);
+}
+
+.buttons>button:hover {
+    background-color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+
+.output-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70,70,70);
+    padding: 20px 30px;
+}
+
+.output-text > label{
+    color: rgb(1, 200, 200);
+    padding-left: 35px;
+}
+.output-text > #output-text {
+    
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    outline: none;
+    justify-self: center;
+    align-self: center;
+    padding: 7px;
+    background-color: rgb(222, 222, 222);
+}
+
+.box2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0px 1px 3px 2px black;
+    border-radius: 14px;
+    width: 400px;
+    height: 700px;
+    margin: auto;
+    overflow: auto;
+    /* overflow-y: scroll; */
+}
+::-webkit-scrollbar{
+    background-color: rgb(25,25,25);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 10px;
+    /* height: 100px; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(10,10,10);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+section>.class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    color: rgb(0, 221, 195);
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 7px;
+    border: 1px solid black;
+
+}
+.box2 > .background {
+    background-color: rgb(0, 255, 225);
+    color: rgb(0, 75, 75);
+}
+
+section>div {
+    box-shadow: inset 0px 1px 3px 1px black;
+    padding: 10px 5px;
+
+}
+
+section>div:hover {
+
+    color: rgb(0, 149, 149);
+    cursor: pointer;
+}
+
+.hidde{
+    display: none;
+}
