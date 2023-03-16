@@ -1,0 +1,127 @@
+:root {
+    --cor01: #101010;
+    --background: #131313;
+    --backgroun-search: #1A1A1A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--background);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px calc(100% - 80px) 30px;
+}
+
+.header {
+    background-color: #101010;
+    color: aliceblue;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.172);
+}
+
+.div-header {
+    display: flex;
+    gap: 20px;
+}
+
+.header > nav > input{
+    background-color: var(--backgroun-search);
+    border: none;
+    border-radius: 7px;
+    position: relative;
+    width: 400px;
+    height: 35px;
+}
+
+.header > nav > input::placeholder{
+    padding-left: 10px;
+}
+
+.header > nav > i{
+    position: absolute;
+    top: 19px;
+    font-size: 21px;
+    margin-left: -31px;
+    color: aliceblue;
+
+}
+
+@media screen and (max-width:700px) and (min-width:260px) {
+    .header> .div-header > h3{
+        font-size: 15px;
+    }
+    .div-header > a {
+        text-decoration: none;
+        color: darkgray;
+        font-size: 12px;
+    }
+    .header > nav > input{
+        background-color: var(--backgroun-search);
+        border: none;
+        border-radius: 7px;
+        position: relative;
+        width: 120px;
+        height: 27px;
+    }
+    .header > nav > i{
+        position: absolute;
+        top: 21px;
+        font-size: 16px;
+        margin-left: -24px;
+        color: aliceblue;
+    
+    }
+    
+}
+
+
+.container-main {
+    padding: 20px 50px;
+    overflow: hidden;
+}
+
+.container-main > h1{
+    text-align: center;
+    color: darkgray;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.container-main > .carrosel{
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(25,25,25);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 10px;
+    /* height: 100px; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(10,10,10);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.container-main > .carrosel > img{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: var(--cor01);
+}
