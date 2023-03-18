@@ -18,7 +18,8 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px calc(100% - 80px) 30px;
+    /* grid-template-rows: 60px calc(100vh - 80px) 30px; */
+    grid-template-rows: 60px 1050px 30px;
 }
 
 .header {
@@ -89,6 +90,7 @@ body {
 .container-main {
     padding: 20px 0px;
     overflow: hidden;
+    /* height: 1300px; */
 }
 
 .container-main > h1{
@@ -101,6 +103,7 @@ body {
     display: flex;
     overflow-x: scroll;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 ::-webkit-scrollbar{
@@ -120,8 +123,18 @@ body {
     height: 200px;
     width: 200px;
     margin-right: 20px;
+    padding: 20px;
 }
+ ol {
+    padding: 10px 40px;
+    color: aliceblue;
+    text-decoration: none;
+ }
+ ol > li > a {
+    color: rgb(142, 142, 142);
+ }
 
 .footer {
     background-color: var(--cor01);
+    padding: 20px; text-align: center;
 }
