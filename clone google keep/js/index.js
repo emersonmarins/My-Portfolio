@@ -1,9 +1,9 @@
-/**
+/**---( 1 )
  *      ====================================
  *                    SELECT ELEMENTS
  *      ====================================
  */
-// Select Elements INPUT
+//----------Select Elements INPUT-----------//
 let searchNote = document.querySelector('#search-input');
 let addNote = document.querySelector('#note-input');
 let titleNote = document.querySelector('.title');
@@ -12,6 +12,28 @@ let textarea = document.querySelectorAll('.textarea');
 let searchButton = document.querySelector('.search-button');
 let btnAddNote = document.querySelector('.add-note');
 let btnRemove = document.querySelector('bi-x-lg');
+
+//----------Iniciar após algum tempo para pegar todos os elementos BTN-CHECK; 
+setTimeout(() => {
+    console.log("oi")
+    let btnCheck = [...document.querySelectorAll('.check')];
+
+    btnCheck.map(element => element.addEventListener('click', (e) => {
+        if (e.target.parentElement.getAttribute('class') == 'check') {
+        
+            e.target.parentElement.parentElement.querySelector('.textarea').classList.toggle('background');
+            e.target.parentElement.parentElement.querySelector('.title').classList.toggle('background');
+
+        
+        } else if (e.target.parentElement.getAttribute('class') == 'note') {
+            e.target.parentElement.querySelector('.textarea').classList.toggle('background');
+            e.target.parentElement.querySelector('.title').classList.toggle('background');
+
+        }
+}));
+    
+}, 2000);
+
 // Select Containers
 let notesContainer = document.querySelector('#notes-container');
 let btnSalve = document.querySelectorAll('.btn-salve');
@@ -21,6 +43,16 @@ let btnSalve = document.querySelectorAll('.btn-salve');
  *                    FUNCTIONS
  *      ====================================
  */
+
+//---( 2 )-------Números de visitas (por carregamento da página);----------//
+if(typeof(Storage) != undefined ) {
+    if (localStorage.visitas) {
+        localStorage.visitas = Number(localStorage.visitas)+1;
+    } else {
+        localStorage.visitas = 1;
+    }
+};
+
 
 function salveNote(e) {
 
@@ -52,13 +84,18 @@ function salveNote(e) {
 
 }
 
+
+//---( 3 )-------pega os elementos do localStorage e cria as notas----------//
 function getLocalStore() {
 
     let notes = localStorage;
 
     for (let index = 0; index < notes.length; index++) {
-        let newObject = JSON.parse(localStorage.getItem(notes.key(index)));
-        create_note(newObject);
+        // Só vai entrar se for um número, permitindo usar o localStore com outras chaves com nome
+        if (Number(notes.key(index))) {
+            let newObject = JSON.parse(localStorage.getItem(notes.key(index)));
+            create_note(newObject);
+        }
 
     }
 
@@ -99,7 +136,8 @@ function addEVT() {
 
 };
 
-
+//---( 4 )-------Cria os elementos vindo do localStorage e da adição de nota----------//
+//---( 6 )-------Quando chamada através da adição de nova nota, chama-se a função geradora de ID-----------//
 function create_note(value) {
 
     // Create Elements
@@ -115,6 +153,8 @@ function create_note(value) {
     let icon_2 = document.createElement('i');
     let icon_3 = document.createElement('i');
 
+    // Confere se foi passado um ID através do parametro value, caso não fora passado cria-se um novo elemento
+    // gerando um novo ID através da função geradora de ID
     let id;
     if (value.id) {
 
@@ -187,29 +227,32 @@ function create_note(value) {
  *              ADD EVENT LISTENER
  *      ====================================
 */
+
+//--( 7 )--( 8 )--( 9 )--Salvar--Deletar--Duplicar-------//
 document.addEventListener('click', (e) => {
 
     let targetEl = e.target;
     let parentEl = targetEl.closest('div');
     let id;
 
+    //---( 7 )-------Salva alterações da nota----------//
     if (targetEl.getAttribute('class') == 'btn-salve') {
 
         salveNote(e);
 
     }
-
+    //---( 8 )-------Deleta a nota no localStorage e no html----------//
     if (targetEl.getAttribute('class') === 'del' || targetEl.getAttribute('class') === 'bi bi-x-lg') {
         let id = parentEl.querySelector('.id').value;
         localStorage.removeItem(id);
         parentEl.remove();
-
     }
-
+    //---( 9 )-------Duplica a nota no localStorage e no html com um  ID novo----------//
     if (targetEl.getAttribute('class') === 'duplic' || targetEl.getAttribute('class') === 'bi bi-file-earmark-plus') {
-        // console.log(notesContainer );
         let notes = parentEl.innerHTML;
         let div = document.createElement('div');
+
+        // Gerando ID
         id = getRandomIntInclusive();
         div.classList.add('note');
         div.innerHTML = notes;
@@ -232,11 +275,14 @@ document.addEventListener('click', (e) => {
 
 });
 
+
+//---( 5 )-------Adiciona nova nota, gera um ID automáticamente para cada nota add----------//
 btnAddNote.addEventListener('click', (e) => {
     let text = addNote.value;
     create_note(text);
 
 });
+
 
 
 

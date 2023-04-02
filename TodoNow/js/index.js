@@ -201,7 +201,7 @@ btnNewTarefa.addEventListener('click', (e) => {
 
 
 document.addEventListener('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const targetEl = e.target;
     const parentEl = targetEl.closest('form');
     const parentMain = targetEl.closest('main');

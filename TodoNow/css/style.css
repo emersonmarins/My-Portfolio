@@ -7,6 +7,19 @@
     color: #0d3641;
 }
 
+#btn-return{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 3px;
+    padding: 7px 31px;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #2a2a2a;
+
+ }
+
 .hidde {
     display: none;
   

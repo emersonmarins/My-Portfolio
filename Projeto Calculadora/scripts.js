@@ -1,7 +1,8 @@
 const previousOperationText = document.querySelector("#previous-operation");
 const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container");
-
+const buttons2 = document.querySelector("#buttons-container");
+// console.log(buttons2)
 class Calculator {
   constructor(previousOperationText, currentOperationText) {
     this.previousOperationText = previousOperationText;
@@ -11,11 +12,12 @@ class Calculator {
 
   // add digit to calculator screen
   addDigit(digit) {
-    console.log(digit);
+    // console.log(digit);
     // Check if number already has a dot
     if (digit === "." && this.currentOperationText.innerText.includes(".")) {
+         
       return;
-    }
+    } 
 
     this.currentOperation = digit;
     this.updateScreen();
@@ -33,10 +35,11 @@ class Calculator {
     }
 
     // Get current and previous values
+    // O operador + na frente do this transforma a string em Number
     let operationValue;
     let previous = +this.previousOperationText.innerText.split(" ")[0];
     let current = +this.currentOperationText.innerText;
-
+    console.log(typeof previous);
     switch (operation) {
       case "+":
         operationValue = previous + current;
@@ -48,6 +51,7 @@ class Calculator {
         break;
       case "*":
         operationValue = previous * current;
+        console.log(operationValue);
         this.updateScreen(operationValue, operation, current, previous);
         break;
       case "/":
@@ -77,18 +81,19 @@ class Calculator {
     operation = null,
     current = null,
     previous = null
-  ) {
+    ) {
+    console.log(operationValue);
     if (operationValue === null) {
       // Append number to current value
       this.currentOperationText.innerText += this.currentOperation;
     } else {
-      // Check if value is zero, if is just add current value
-      if (previous === 0) {
-        // operationValue = current;
-      }
-      // Add current value to previous
-      this.previousOperationText.innerText = `${operationValue} ${operation}`;
-      this.currentOperationText.innerText = "";
+        // Check if value is zero, if is just add current value
+        if (previous === 0) {
+          operationValue = current;
+        }
+        // Add current value to previous
+        this.previousOperationText.innerText = `${operationValue} ${operation}`;
+        this.currentOperationText.innerText = "";
     }
   }
 
@@ -131,15 +136,14 @@ class Calculator {
 
 const calc = new Calculator(previousOperationText, currentOperationText);
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
+// buttons.forEach((btn) => {
+  buttons2.addEventListener("click", (e) => {
+    // console.log(e.target.innerText)
     const value = e.target.innerText;
-
     if (+value >= 0 || value === ".") {
-      console.log(value);
       calc.addDigit(value);
     } else {
       calc.processOperation(value);
     }
   });
-});
+// });

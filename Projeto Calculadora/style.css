@@ -8,26 +8,44 @@
 body {
     background-color: #333;
     display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 450px;
     align-items: center;
     justify-content: center;
     padding: 3em;
-}
+    margin: auto;
+   }
+   .btn-return{
+      position: absolute;
+      top: 10px;
 
-#calc {
-    width: 400px;
+      padding: 7px 31px;
+
+   }
+   .btn-return > a{
+      text-decoration: none;
+      color: #2a2a2a;
+
+   }
+   
+   #calc {
+    flex-grow: 1;
+    flex-basis: 2;
+    display: flex;
+    flex-direction: column;
     padding: .5em;
     background-color: #c4c4c4;
     color: #000;
-    display: flex;
-    flex-direction: column;
-}
-
-#calc h3 {
-    font-size: .8em;
-    font-weight: 300;
-    color: #666;
-}
- #operations {
+    margin: 20px;
+   }
+   
+   #calc h3 {
+      font-size: .8em;
+      font-weight: 300;
+      color: #666;
+   }
+   #operations {
     text-align: right;
     overflow-wrap: break-word;
  }
