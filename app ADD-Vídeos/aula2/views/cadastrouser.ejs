@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+    <div class="div-login">
+        <img class="img-login" src="/images/person.png" alt="">
+        <form action="http://localhost:3000/cadastro" method="post" class="form-login">
+            <h3>Cadastre-se</h3>
+            <p class="alert"><%= alert %></p>
+            <input type="text" name="user" placeholder="Nome do Usuário">
+            <input type="password" name="password" id="" placeholder="Senha">
+            <input type="password" name="confirmPassword" id="" placeholder="Digita a Senha Novamente">
+            <div class="div-submit">
+                <button>Cadastrar</button>
+                <a href="http://localhost:3000/login">
+                    <p>Fazer Login</p>
+                </a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

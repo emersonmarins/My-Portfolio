@@ -1,0 +1,52 @@
+.container-edit {
+    /* position: absolute;
+    top: 0; */
+    background-color: rgba(0, 0, 0, 0.151);
+    margin-top: 70px;
+}
+
+.div-container{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px 40px;
+    /* background-color: rgb(162, 112, 209); */
+    color: aliceblue;
+}
+
+.modal-edit {
+    background-color: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+    border: none;
+    border-radius: 7px;
+    width: 60px;
+    height: 27px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    /* padding: 7px; */
+    font-size: 0.9em;
+    color: rgb(28, 8, 77);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn-edt {
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(227, 222, 243);
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+    color: rgb(28, 8, 77);
+    font-size: 1em;
+}
+.hr {
+    width: 80%;
+    margin: auto;
+    border: none;
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.178);
+}
+
