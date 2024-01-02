@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Complementar */
+:root {
+    --color-background: #1C1714;
+    --color-background-light: #f1f1f1;
+    --color-background-blue: linear-gradient(to left, rgb(68, 2, 223), rgb(79, 172, 248));
+    --color-background-yellow: linear-gradient(to left, rgb(255, 227, 69), rgb(255, 174, 0));
+    --color-background-yellowRight: linear-gradient(to right, rgb(255, 227, 69), rgb(255, 174, 0));
+    --color-background-cianoDark: linear-gradient(to left, rgb(3, 211, 159), rgb(2, 95, 56));
+    --color-background-orangeDark: linear-gradient(to left, rgb(255, 157, 29), rgb(121, 64, 0));
+    --color-background-orangeDarkRight: linear-gradient(to right, rgb(255, 157, 29), rgb(121, 64, 0));
+    --color-background-gradient-dark:  linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(14,14,14,1) 25%, rgba(7,7,7,1) 50%, rgba(14,14,14,1) 75%, rgba(21,21,21,1) 100%);
+    --color-01: #C97636;
+    --color-02: #914B16;
+    --color-03: #003D45;
+    --color-04: #32DAF0;
+
+    --color-text-01: #fff;
+    --color-text-02: #dbdbdb;
+    --color-text-03: #cecece;
+    --color-text-04: #a8a8a8;
+    --color-text-05: #000000;
+    --color-text-06: #1a1a1a;
+    --color-text-07: rgb(255, 157, 29);
+    --color-text-08: rgb(3, 211, 159);
+
+    --color-background2: #0e070c;
+    --color-background3: #141414;
+    --color-background-gradient: linear-gradient(#0b0a0c, #0b080e, #0e0714);
+    --color-05: #36123B;
+    --color-06: #9539ff;
+    --color-07: #3D0045;
+    --color-08: #b479f8;
+    --color-09: #B53BC6;
+    --color-10: rgb(77, 52, 127);
+    --color-11: #7f1be4;
+    --step--2: clamp(0.6075rem, 0.5063rem + 0.405vw, 0.9113rem);
+    --step--1: clamp(0.7294rem, 0.6079rem + 0.4858vw, 1.0938rem);
+    --step-0: clamp(0.875rem, 0.7292rem + 0.5833vw, 1.3125rem);
+    --step-1: clamp(1.05rem, 0.875rem + 0.7vw, 1.575rem);
+    --step-2: clamp(1.26rem, 1.05rem + 0.84vw, 1.89rem);
+    --step-3: clamp(1.5119rem, 1.2598rem + 1.0083vw, 2.2681rem);
+    --step-4: clamp(1.8144rem, 1.5119rem + 1.21vw, 2.7219rem);
+    --step-5: clamp(2.1775rem, 1.8148rem + 1.4508vw, 3.2656rem);
+
+    --max-width: 1170px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Forum', cursive;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+/* Settings */
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.1;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    /* height: auto; */
+}
+
+body {
+    background: var(--color-background-gradient-dark);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1170px; */
+    width: 100vw;
+    margin: auto;
+    height: auto;
+}

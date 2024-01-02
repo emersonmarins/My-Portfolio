@@ -1,74 +1,683 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/carousel2.css">
-    <title>Projetos</title>
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./src/pages/index/styles/style.css">
+    <link rel="stylesheet" href="./src/pages/index/styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="skills.css"> -->
+    <link rel="stylesheet" href="./src/pages/index/styles/hero.css">
+    <link rel="stylesheet" href="./src/pages/index/styles/skill.css">
+    <link rel="stylesheet" href="./src/pages/index/styles/portfolio.css">
+    <link rel="stylesheet" href="./src/pages/index/styles/footer.css">
+
 </head>
+
 <body>
-    <header class="header">
-        <div class="div-header">
-            <h3>EMERSON MARINS</h3>
-            <a href="#">Início</a>
-            <a href="#">Menu</a>
-        </div>
-        <nav class="nav-bar">
-            <input type="search" name="" id="" placeholder="Pesquisar"> 
-            <i class="bi bi-search"></i>
-        </nav>
-    </header>
-    <main class="container-main">
-        
-        <h1>Meus projetos</h1>
-        <!-- Carousel 3D-->
-        <div class="body">
-            <div class="container-arrastar">
-                <div class="container-rodar">
-                    <!-- <img src="../img/calc-trans.png" alt=""> -->
-                    <img src="img/calculadora01.png" alt="">
-                    <img src="img/cap1.png" alt="">
-                    <img src="img/Cordel-moderno.png" alt="">
-                    <img src="img/cubo-ball.png" alt="">
-                    <img src="img/cubo01.png" alt="">
-                    <img src="img/Projetomario.png" alt="">
-                    <img src="img/todolist.png" alt="">
-                    <!-- <p>3D Carousel</p>   -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="./src/assets/logo-white.png" alt="logotipo">
                 </div>
-                <div id="chao"></div>
+                <nav class="menu">
+                    <div class="head">
+                        <div class="logo"><img src="" alt=""></div>
+                        <button class="close_menu_btn"></button>
+                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Pages</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="sub_menu up_arrow">
+                                <li><a href="#"><span>About</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#"><span>Team</span></a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="sub_menu sub_menu_right">
+                                        <li><a href="#"><span>Team 01</span></a></li>
+                                        <li><a href="#"><span>Team 02</span></a></li>
+                                        <li><a href="#"><span>Team 03</span></a></li>
+                                        <li><a href="#"><span>Team 04</span></a></li>
+                                        <li><a href="#"><span>Team 05</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><span>Testimonials</span></a></li>
+                                <li><a href="#"><span>Pricing</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#"><span>Elements</span></a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="sub_menu sub_menu_right">
+                                        <li><a href="#"><span>Accordion</span></a></li>
+                                        <li><a href="#"><span>Alerts</span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#"><span>Cards</span></a>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                            <ul class="sub_menu sub_menu_right">
+                                                <li><a href="#"><span>Cards 01</span></a></li>
+                                                <li><a href="#"><span>Cards 02</span></a></li>
+                                                <li><a href="#"><span>Cards 03</span></a></li>
+                                                <li><a href="#"><span>Cards 04</span></a></li>
+                                                <li><a href="#"><span>Cards 05</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span>Carousel</span></a></li>
+                                        <li><a href="#"><span>Table</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#">Portifolio</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="sub_menu up_arrow">
+                                <li><a href="#"><span>Portifolio mansory</span></a></li>
+                                <li><a href="#"><span>Portifolio list</span></a></li>
+                                <li><a href="#"><span>Portifolio details</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#"><span>Portifolio grid</span></a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="sub_menu sub_menu_left">
+                                        <li><a href="#"><span>Portifolio 01</span></a></li>
+                                        <li><a href="#"><span>Portifolio 02</span></a></li>
+                                        <li><a href="#"><span>Portifolio 03</span></a></li>
+                                        <li><a href="#"><span>Portifolio 04</span></a></li>
+                                        <li><a href="#"><span>Portifolio 05</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="carrosel">
-            <img src="img/calc-trans.png" alt="">
-            <img src="img/calculadora01.png" alt="">
-            <img src="img/cap1.png" alt="">
-            <img src="img/Cordel-moderno.png" alt="">
-            <img src="img/cubo-ball.png" alt="">
-        </div>
-        <ol>
-            <li><a href="Animação/3d-bube.html" class="link">3d-bube</a></li>
-            <li><a href="Animação/cubo.html" class="link">cubo</a></li>
-            <li><a href="Animação/index.html" class="link">Cubo 3</a></li>
-            <li><a href="clone google keep/index.html" class="link">bloco de notas - inspirado no google-keep</a></li>
-            <li><a href="modal/index.html" class="link">Modal</a></li>
-            <li><a href="Projeto Calculadora/calculadora.html" class="link">Calculadora</a></li>
-            <li><a href="projeto fetch 2/index2.html" class="link">fetch2</a></li>
-            <li><a href="projeto fetch/index.html" class="link">fetch1</a></li>
-            <li><a href="PROJETO-MARIO/index.html" class="link">Projeto Mario</a></li>
-            <li><a href="To do list/index.html" class="link">Todo List</a></li>
-            <li><a href="TodoNow/index.html" class="link">TodoNow</a></li>
-            <!-- <li><a href="android/androidx.html" class="link">Android</a></li> -->
-            <li><a href="Site Poesias Cordel/index.html" class="link">Site Poesias</a></li>
-            <li><a href="Redes sociais/home.html" class="link">Redes sociais</a></li>
-            <li><a href="calculadora-neon/aula53.html" class="link">Calculadora Neon</a></li>
-        </ol>
-    </main>
-    <footer class="footer">
-        <a href="">Feito por Emerson Marins</a>
-    </footer>
-    <script src="./carousel/js/carousel.js"></script>
+        </header>
+        <main>
+            <section class="introducing">
+                <div class="left">
+                    <div class="title">
+                        <span><span class="bemvindo">Bem Vindo</span> ao meu Portifólio</span>
+                        <h1>Olá eu sou <span>Emerson Marins</span></h1>
+                    </div>
+                    <div class="text">Começei a estudar programação à cerca de 1 ano e literalmente virou um vício e uma
+                        grande paixão,
+                        dês de então me empenho no desenvolvimento web sempre buscando a excelencia em meus projetos.
+                    </div>
+                    <div class="technologies">
+                        <span class="icons-t"><i class="fa-brands fa-html5 html5"></i></span>
+                        <span class="icons-t"><i class="fa-brands fa-css3-alt css3"></i></span>
+                        <span class="icons-t"><i class="fa-brands fa-js js"></i></span>
+                        <span class="icons-t"><i class="fa-brands fa-react react"></i></span>
+                        <span class="icons-t"><i class="fa-brands fa-node node"></i></span>
+                        <span class="icons-t"><i class="fa-brands fa-php php"></i></span>
+                        <span class="icon-mongo-svg">
+                            <div class="icon-mongo">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg id="svg2" width="898.03" height="257.02" version="1.1" viewBox="0 0 898.03 257.02"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <metadata id="metadata8">
+                                        <rdf:RDF>
+                                            <cc:Work rdf:about="">
+                                                <dc:format>image/svg+xml</dc:format>
+                                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                <dc:title />
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <g id="g10">
+                                        <path id="mongodb"
+                                            d="m51.958 246.02c-0.14416-0.695-0.40623-2.7111-0.58235-4.4803-0.77814-7.8184-3.3265-19.758-4.813-22.55-0.55099-1.0349-3.065-3.9321-5.5868-6.4382-9.5033-9.444-18.433-20.228-25.083-30.289-10.704-16.196-13.555-25.945-13.505-46.181 0.051726-20.989 4.2012-40.944 12.374-59.507 6.8257-15.503 13.773-26.218 23.538-36.302 5.8551-6.0461 9.1815-10.554 13.956-18.915 4.1912-7.339 3.243-7.5519 9.0021 2.0213 4.2891 7.1297 7.3158 11.121 13.468 17.758 21.297 22.979 33.788 55.851 34.854 91.728 0.36265 12.207-0.30874 20.929-2.0723 26.921-3.9477 13.413-17.794 34.157-33.217 49.765-2.5934 2.6247-5.533 5.623-6.5322 6.663l-1.8169 1.8908-0.82261 13.371c-0.45241 7.3539-0.97347 13.728-1.1579 14.165-0.51557 1.2215-2.38 1.6432-7.2654 1.6432h-4.4753zm443.14-16.851c-8.957-1.5731-20.136-7.1041-22.147-10.958-2.5025-4.7952 0.41807-10.361 10.483-19.978l4.434-4.2366-1.6916-1.2532c-5.7247-4.2412-7.0735-6.6614-5.7551-10.326 1.2238-3.4022 2.934-5.6216 8.041-10.435l4.5701-4.3074-1.4942-1.1342c-3.8838-2.948-8.2983-7.2606-9.5179-9.2982-1.8257-3.05-3.3472-8.6999-3.3472-12.429 0-3.8853 1.531-9.3738 3.599-12.902 4.2044-7.1727 13.043-11.981 24.474-13.314 7.4052-0.86351 11.914-0.15185 23.127 3.65 2.5318 0.85848 4.4055 1.0359 13.58 1.2862l10.643 0.29036-0.33938 3.0118c-0.18665 1.6565-0.43449 3.0984-0.55089 3.2042-0.11627 0.10583-3.4206 0.29726-7.3426 0.42551-6.2494 0.20434-7.0996 0.32451-6.8765 0.97174 0.13989 0.40622 0.89705 2.0827 1.6824 3.7254 1.3579 2.8402 1.428 3.3257 1.428 9.8892 0 6.8381-0.0149 6.9302-1.6189 9.8925-3.346 6.18-11.408 12.416-17.998 13.921-7.2966 1.6665-14.163 1.8951-20.964 0.69808-3.2644-0.57452-4.0183-0.21188-7.0934 3.4124-2.3037 2.715-3.0723 5.1144-2.1436 6.6921 1.3771 2.3397 4.9495 2.8896 24.298 3.7404 21.563 0.94816 25.42 1.7672 31.249 6.6342 2.758 2.3029 3.9128 4.3545 4.6667 8.2908 1.1579 6.046-0.55299 11.238-5.4744 16.612-5.068 5.5343-15.095 11.219-23.872 13.534-3.2204 0.84938-5.348 1.0231-14.15 1.1553-7.2682 0.10917-11.416-0.0297-13.898-0.46563zm34.065-9.673c11.498-2.5737 20.568-12.61 16.31-18.047-1.7725-2.2634-5.3606-3.2726-14.999-4.2186-7.6167-0.74764-27.58-1.871-33.249-1.871-4.9553 0-5.0207 0.0144-6.4817 1.4366-2.2148 2.1557-6.2346 9.8117-6.2346 11.874 0 4.7543 8.2736 9.7698 18.928 11.475 4.1925 0.67078 21.818 0.22669 25.727-0.64819zm-11.539-54.467c5.6539-2.5836 7.6412-5.296 8.5864-11.719 0.82103-5.5794 0.34186-14.243-1.0057-18.18-3.5929-10.5-13.217-15.621-22.007-11.711-6.1864 2.7521-9.3714 8.9863-9.3567 18.315 0.016 10.434 4.2015 19.841 10.369 23.306 3.4363 1.931 9.175 1.9265 13.414-0.0107zm-194.43 31.237c-12.406-1.188-22.925-8.5567-28.947-20.279-5.9153-11.514-5.7533-24.368 0.46027-36.514 2.6908-5.2604 5.4052-8.7024 9.8157-12.448 6.9195-5.8756 14.643-8.5071 24.817-8.4556 18.359 0.0931 32.639 10.463 37.72 27.391 1.6617 5.5369 1.5652 14.886-0.21679 21.002-4.1993 14.415-13.77 24.341-26.89 27.889-2.8784 0.77839-11.89 2.0501-12.887 1.8187-0.13889-0.0322-1.881-0.21453-3.8712-0.40512zm16.298-6.8364c6.684-2.8356 9.7817-7.7167 11.608-18.291 0.63995-3.7043 0.78819-6.5866 0.58602-11.392-0.70861-16.85-6.8167-29.431-16.64-34.274-3.0157-1.4868-3.4407-1.5677-8.2335-1.5674-4.5714 3.1e-4 -5.3133 0.12456-7.773 1.3018-9.1122 4.3613-13.156 13.446-12.512 28.107 0.46644 10.617 2.2133 17.524 6.2445 24.69 6.202 11.025 16.891 15.596 26.72 11.426zm257.44 6.8132c-8.8254-0.77179-17.569-5.1337-23.334-11.641-8.7754-9.9045-12.392-26.534-8.229-37.834 0.72235-1.9606 2.6965-6.1389 4.3871-9.2851 2.7052-5.0345 3.5643-6.1698 7.1653-9.4693 6.9258-6.3458 15.584-9.4536 26.581-9.5406 8.7193-0.069 15.515 1.9543 22.585 6.7238 6.3632 4.2931 12.242 12.664 14.905 21.223 1.6781 5.3935 1.5766 13.881-0.24029 20.1-6.0689 20.774-22.065 31.625-43.819 29.722zm16.496-6.6396c5.6402-2.5091 10.464-9.1482 11.391-15.676 0.72799-5.1296 0.18436-24.432-0.7882-27.989-2.4615-9.0016-8.5677-17.008-15.627-20.489-2.9306-1.4453-3.4425-1.545-7.9338-1.545-4.5015 0-4.9986 0.0972-7.9688 1.5619-5.2759 2.6013-8.4186 6.4762-10.319 12.723-0.97753 3.213-1.11 4.8138-1.1375 13.746-0.0349 11.188 0.53438 14.889 3.2834 21.36 2.8845 6.79 7.8803 13.043 12.305 15.4 5.163 2.7512 11.841 3.1122 16.796 0.908zm-465.86 4.8761c-1.5766-0.15096-3.0544-0.44531-3.284-0.6541-0.59319-0.53933 1.2164-1.6222 3.6082-2.1592 3.0681-0.6888 5.3023-1.8592 6.677-3.498 1.9534-2.3287 2.3136-7.9716 2.0494-32.096-0.23979-21.885-0.37371-23.295-2.4379-25.681-0.98071-1.1337-1.2925-1.202-5.4896-1.202-3.1469 0-4.6176-0.18396-5.0232-0.62829-1.02-1.1175 1.2988-2.2266 12.953-6.1955 10.034-3.417 13.481-4.2885 14.239-3.5995 0.34028 0.30943 0.55042 2.9409 0.55518 6.954 0 3.5509 0.1997 6.7314 0.43431 7.0679 0.31511 0.45194 1.8841-0.62835 6.0068-4.1356 5.8694-4.9933 9.1501-7.0526 14.383-9.0284 4.3486-1.6418 10.829-1.6822 15.302-0.0954 4.2395 1.504 9.1176 5.9884 11.134 10.235 0.81 1.7059 1.6811 3.1017 1.9358 3.1017s2.2043-1.5126 4.3325-3.3614c5.6928-4.9453 8.9483-7.1685 13.018-8.8902 9.425-3.9869 18.608-2.759 25.352 3.3902 3.437 3.1339 5.4006 6.5748 6.1055 10.7 0.28078 1.6428 0.73825 11.878 1.0165 22.746 0.71259 27.821 0.96252 30.443 3.0655 32.174 0.56334 0.46354 2.7816 1.1824 4.9295 1.5975 3.2907 0.6359 3.9303 0.90993 4.0645 1.7413 0.12057 0.74786-0.18507 1.0734-1.2635 1.3454-1.8624 0.46972-35.362 0.47096-37.213 2e-3 -2.2609-0.57341-1.3492-1.3839 3.0088-2.6751 8.4142-2.4928 8.3266-2.3004 8.6359-18.98 0.13162-7.0988 0.0119-18.19-0.26517-24.648-0.45539-10.6-0.61309-11.951-1.6224-13.903-2.2474-4.3473-5.7827-6.0242-12.114-5.7458-3.5634 0.15669-4.9557 0.46118-8.094 1.7702-2.9152 1.2159-8.7071 4.7215-12.563 7.6039-0.34625 0.25877-0.0107 35.377 0.40483 42.117 0.30634 4.9951 0.6325 7.0768 1.2406 7.9207 1.0561 1.4655 3.8398 2.7456 7.4398 3.421 3.3071 0.62048 4.7765 1.4448 4.3552 2.4432-0.471 1.116-6.503 1.3339-23.872 0.86235-14.902-0.40459-17.435-0.61204-17.435-1.4278 0-0.43513 2.1734-1.2199 4.5484-1.6422 2.2362-0.3977 4.9703-1.6494 7.0076-3.2081l1.5837-1.2116v-21.453c0-23.136-0.34376-27.916-2.2684-31.539-4.4062-8.2942-16.517-8.0636-28.433 0.54123l-3.6639 2.6458 0.0289 19.774c0.0328 22.422 0.4172 29.491 1.6992 31.27 1.2425 1.7242 3.5564 2.8414 6.6016 3.1874 3.1495 0.35781 4.9942 1.351 3.8151 2.0541-0.40803 0.24332-2.1137 0.54933-3.7902 0.68002-4.8556 0.3785-29.547 0.61494-32.7 0.31312zm233.42 0.0788c-2.4895-0.11683-3.5174-0.35373-3.731-0.85989-0.44526-1.0549 0.34802-1.5027 3.6428-2.0565 4.0572-0.68195 5.6098-1.497 6.7615-3.5497 1.9202-3.4222 2.2051-8.0286 1.9324-31.231-0.2735-23.262-0.40334-24.529-2.7306-26.645-1.1871-1.0794-1.5056-1.1369-4.9728-0.89847-2.698 0.18554-3.9555 0.085-4.6282-0.36989-0.88958-0.60161-0.88581-0.65959 0.10464-1.5734 1.113-1.0269 14.968-6.3524 20.504-7.8814 4.2868-1.1839 6.1005-1.0444 6.5754 0.50588 0.1935 0.63183 0.22922 3.9403 0.0796 7.3522l-0.27262 6.2034 4.7417-4.1705c7.2555-6.3816 12.52-9.2131 19.639-10.563 9.1297-1.7309 16.141 1.6682 21.119 10.239l2.1561 3.7121 0.48186 21.758c0.26505 11.967 0.62293 23.723 0.79536 26.124 0.50743 7.0689 2.0946 9.2427 7.8615 10.767 3.4618 0.91506 5.0569 1.8935 4.0604 2.4907-1.2854 0.77039-8.931 0.95521-23.576 0.56988-13.806-0.36324-16.424-0.5858-16.424-1.3961 0-0.52901 2.4343-1.4021 3.9404-1.4132 2.0969-0.0155 5.201-1.5213 7.3659-3.5733l1.9569-1.8549-0.28148-22.899c-0.32813-26.684-0.54891-28.32-4.3218-32.015-2.1799-2.1351-4.0124-2.7785-7.9019-2.7745-6.2242 5e-3 -11.925 2.2702-18.201 7.2269l-2.8218 2.2287 0.15123 23.964c0.14048 22.262 0.2178 24.085 1.0894 25.68 1.1431 2.0906 3.3433 3.36 6.4516 3.7222 5.82 0.67809 6.7372 2.655 1.4494 3.1241-3.3922 0.30086-26.933 0.34158-32.996 0.057zm274.82 0.0267c-3.4712-0.27492-4.2957-0.5659-4.2957-1.516 0-1.2739 1.5126-1.8451 4.8942-1.848 3.9355-3e-3 6.4052-0.6857 8.4811-2.343 3.1744-2.5342 3.0493-0.50933 3.0493-49.35 0-49.509 0.1967-46.635-3.3576-49.051-2.1019-1.4283-4.2722-2.0447-8.5713-2.4347-3.8752-0.35155-4.6627-0.68577-4.4144-1.8734 0.33509-1.6021 4.9947-1.7471 38.327-1.1923 34.722 0.57794 35.805 0.66392 44.997 3.5731 6.2867 1.9897 8.0113 2.757 13.626 6.0622 12.095 7.1203 20.145 18.979 23.003 33.887 1.1842 6.1767 1.2118 16.913 0.0587 22.728-3.4638 17.466-14.229 30.434-31.306 37.71-10.919 4.6526-25.5 6.0065-63.266 5.8747-10.562-0.0369-20.114-0.13912-21.226-0.22719zm60.898-7.2676c3.9372-0.92765 5.5917-1.6722 8.7228-3.9252 7.2631-5.2262 11.752-13.975 13.838-26.97 1.0449-6.5084 1.1855-24.854 0.23689-30.909-1.4097-8.9988-4.7754-17.329-9.364-23.176-6.0789-7.7458-13.217-10.623-28.469-11.476l-4.6747-0.2614v46.533c0 52.005-0.34753 47.326 3.7176 50.038 2.0914 1.3953 2.1011 1.3968 7.4237 1.1532 2.9312-0.13418 6.7872-0.5874 8.5689-1.0072zm68.224 6.0448c0-1.9139 0.15918-1.9754 5.9002-2.2789 4.5396-0.23999 7.679-1.7432 9.0243-4.3211 1.3473-2.5814 1.6964-12.256 1.6964-47.004 0-35.678-0.34027-44.584-1.8022-47.163-1.3552-2.3916-4.3613-3.874-8.3972-4.1408-6.0891-0.4026-6.5017-0.52724-6.3261-1.9106 0.14854-1.1698 0.35101-1.2583 3.6947-1.6158 4.97-0.5313 63.065-0.04361 69.236 0.5812 11.291 1.1434 17.375 3.3722 23.497 8.6092 7.7899 6.6633 10.921 15.882 8.147 23.986-2.568 7.5023-7.2509 11.201-20.168 15.93-3.8579 1.4123-5.0325 2.0266-4.5484 2.3784 0.35898 0.26088 3.268 1.3403 6.4645 2.3986 13.159 4.3569 18.314 7.9534 22.313 15.566 1.4021 2.6691 1.642 3.6758 1.8264 7.6677 0.72363 15.659-8.7024 25.655-28.632 30.363-6.517 1.5396-15.059 1.9198-51.731 2.302l-30.196 0.31481zm59.908-5.3978c4.5604-0.76656 8.9812-2.8082 12.285-5.6738 4.841-4.1985 7.1285-9.7556 7.1427-17.352 0.0107-5.1145-0.70145-8.0906-2.8731-12.026-4.3257-7.8389-11.027-11.232-23.651-11.974-2.7795-0.16343-5.7928-0.40204-6.6961-0.53023l-1.6425-0.23307 0.013 17.367c0.0139 18.048 0.46653 25.44 1.691 27.593 0.88422 1.5548 2.2634 2.7034 3.6023 2.9999 1.8966 0.42012 7.1369 0.33141 10.129-0.17147zm-8.2751-54.18c9.2689-1.0243 14.151-2.813 17.975-6.5852 3.8419-3.7898 5.6711-8.6501 5.6847-15.105 0.0139-6.8092-1.933-11.75-5.9924-15.202-4.3552-3.7041-8.5705-5.0477-18.291-5.8299-3.1785-0.25581-5.9496-0.46685-6.1581-0.46902-0.20845-0.0021-0.37899 9.9164-0.37899 22.041v22.045l1.3897-0.2058c0.76444-0.11311 3.361-0.42362 5.7702-0.68985z"
+                                            fill="#ffffff" image-rendering="optimizeSpeed" stroke-width=".4819"
+                                            stroke="000000" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="personal-image">
+                        <img src="./src/assets/imgperfil02.png" alt="emerson marins" srcset="">
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="circles-wrap">
+                    <div class="header-skill">
+                        <span class="title-skill-main"><span class="text-color">Soft</span>Skills</span>
+                        <span class="subtitle-skill">
+                            Minhas habilidades comportamentais
+                        </span>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle-wrap">
+                            <span class="title-skill m-blueGradient m-textWhite">Comunicação</span>
+                            <div class="circle" data-prog="70">
+                                <svg width="250" height="250">
+                                    <circle r="100" cx="125" cy="125" class="track">
+                                    </circle>
+                                    <circle r="100" cx="125" cy="125" class="progress">
+                                    </circle>
+                                </svg>
+                                <div class="circle-inner">
+                                    <span class="text-porcentage">70<span class="simbol-porcentage">%</span></span>
+                                </div>
+                            </div>
+                            <span class="text-skill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                                deleniti
+                                architecto atque deserunt, ipsam autem nulla cumque optio!
+                                <button class="btn-skill m-blueGradient m-textWhite ">Ler Mais</button>
+                            </span>
+                        </div>
+                        <div class="circle-wrap">
+                            <span class="title-skill">Criatividade</span>
+                            <div class="circle" data-prog="95">
+                                <svg width="250" height="250">
+                                    <circle r="100" cx="125" cy="125" class="track">
+                                    </circle>
+                                    <circle r="100" cx="125" cy="125" class="progress">
+                                    </circle>
+                                </svg>
+                                <div class="circle-inner">
+                                    <span class="text-porcentage">95<span class="simbol-porcentage">%</span></span>
+                                </div>
+                            </div>
+                            <span class="text-skill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                                deleniti
+                                architecto atque deserunt, ipsam autem nulla cumque optio!
+                                <button class="btn-skill">Ler Mais</button>
+                            </span>
+                        </div>
+                        <div class="circle-wrap">
+                            <span class="title-skill m-blueGradient m-textWhite ">Trabalho em Equipe</span>
+                            <div class="circle" data-prog="90">
+                                <svg width="250" height="250">
+                                    <circle r="100" cx="125" cy="125" class="track">
+                                    </circle>
+                                    <circle r="100" cx="125" cy="125" class="progress">
+                                    </circle>
+                                </svg>
+                                <div class="circle-inner">
+                                    <span class="text-porcentage">90<span class="simbol-porcentage">%</span></span>
+                                </div>
+                            </div>
+                            <span class="text-skill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                                deleniti
+                                architecto atque deserunt, ipsam autem nulla cumque optio!
+                                <button class="btn-skill m-blueGradient m-textWhite ">Ler Mais</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="section-portfolio">
+                    <div class="portfolio-content 00">
+                        <div class="portfolio-content-info">
+                            <div class="portfolio-title-container">
+                                <h2 class="portfolio-title"><span>Site</span> Ceramic Projeto Desenvolvido Para
+                                    Ecommerce</h2>
+                                <div class="btn-repository">
+                                    <i class="fa-brands fa-github icon"></i>
+                                    <span>REPOSITÓRIO</span>
+                                </div>
+                            </div>
+                            <span class="portfolio-text">Nesse projeto foram utilizado as seguintes tecnologias no front
+                                end: HTML CSS Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <span class="text-more display-none">Nesse projeto foram utilizado as seguintes tecnologias
+                                no front end: HTML
+                                CSS Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <div class="portfolio-btn-container">
+                                <button class="portfolio-btn btn">Saiba mais</button>
+                                <button class="btn">Ir para o site</button>
+                            </div>
+                        </div>
+                        <div class="wrap-img">
+                            <div class="portfolio-image">
+                                <img class="id00" src="./src/assets/porcelan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content 01">
+                        <div class="wrap-img">
+                            <div class="portfolio-image last">
+                                <img class="id01" src="./src/assets/porcelan.png" alt="">
+                            </div>
+                        </div>
+                        <div class="portfolio-content-info">
+                            <div class="portfolio-title-container">
+                                <h2 class="portfolio-title"><span>Site</span> Ceramic Projeto Desenvolvido Para
+                                    Ecommerce</h2>
+                                <div class="btn-repository">
+                                    <i class="fa-brands fa-github icon"></i>
+                                    <span>REPOSITÓRIO</span>
+                                </div>
+                            </div>
+                            <span class="portfolio-text">Nesse projeto foram utilizado as seguintes tecnologias no front
+                                end: HTML CSS
+                                Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <span class="text-more display-none">Nesse projeto foram utilizado as seguintes tecnologias
+                                no front end: HTML
+                                CSS Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <div class="portfolio-btn-container">
+                                <button class="portfolio-btn btn">Saiba mais</button>
+                                <button class="btn">Ir para o site</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content 02">
+                        <div class="portfolio-content-info">
+                            <div class="portfolio-title-container">
+                                <h2 class="portfolio-title"><span>Site</span> Ceramic Projeto Desenvolvido Para
+                                    Ecommerce</h2>
+                                <div class="btn-repository">
+                                    <i class="fa-brands fa-github icon"></i>
+                                    <span>REPOSITÓRIO</span>
+                                </div>
+                            </div>
+                            <span class="portfolio-text">Nesse projeto foram utilizado as seguintes tecnologias no front
+                                end: HTML CSS Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <span class="text-more display-none">Nesse projeto foram utilizado as seguintes tecnologias
+                                no front end: HTML
+                                CSS Java
+                                Script, Sass e no back end: Java Script, CSS, HTML, MongoDB, AWS
+                                <ul>
+                                    <li>Responsivo</li>
+                                    <li>Todas as funcionalidade foram implementadas por mim sem auxílio de libs</li>
+                                    <li>Back end foi utilizado o AWS para guarda fotos e o mongoDB como banco de dados
+                                    </li>
+                                    <li>Salva histórico de compras no Local Storage</li>
+                                </ul>
+                            </span>
+                            <div class="portfolio-btn-container">
+                                <button class="portfolio-btn btn">Saiba mais</button>
+                                <button class="btn">Ir para o site</button>
+                            </div>
+                        </div>
+                        <div class="wrap-img">
+                            <div class="portfolio-image">
+                                <img class="id02" src="./src/assets/porcelan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact"></section>
+        </main>
+        <footer id="footer" class="footer-wrapper" data-bs-theme="dark">
+            <div class="footer-container">
+    
+                <!-- <div class="footer__row-pt">
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt" src="img/logo/arcamuds.png">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt" src="img/logo/lion-king.png">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt" src="img/logo/auto-center.png">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <figure>
+                                <img class="footer__img-pt" src="img/logo/shopping.png">
+                            </figure>
+                        </a>
+                    </div>
+                </div> -->
+    
+                <div class="footer__row-infos" data-cues="fadeIn" data-disabled="true">
+                    <div class="footer__col-01">
+                        <!-- Brand -->
+                        <div class="footer__content">
+                            <a href="./index.html" class="d-inline-block">
+                                <h5>Holly Hotel</h5>
+                            </a>
+                            <p>
+                                <em>Sed diam constituam ei, qui erat probo dissentiet ex. Id vim libris volutpat, pri cu
+                                    errem timeam cotidieque, purto summo has te. An quis eligendi atomorum duo, latine
+                                    veritus vituperata vim no. Duo errem latine scribentur an.</em>
+                                <a href="./about.html" class="text-body link-hover-primary">[+]</a>
+                            </p>
+                        </div>
+                        <!-- /Brand -->
+                    </div>
+                    <div class="footer__col-02">
+                        <!-- Contact Info -->
+                        <div class="footer__content">
+                            <h5>Contact Info</h5>
+                            <div class="pt-2">
+                                <p>
+                                    <span>610 Placer Loquen, Paris, France.</span>
+                                </p>
+                                <p>
+                                    <span>+33 321-654-9876 (Ext: 123).</span>
+                                </p>
+                                <p>
+                                    <a href="#" class="text-body link-hover-primary">Booking@example.com</a>
+                                </p>
+                                <p>
+                                    <a href="#" class="text-body link-hover-primary">www.example.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Contact Info -->
+                    </div>
+                    <div class="footer__col-03">
+                        <!-- Quick Links -->
+                        <div class="footer__content">
+                            <h5>Quick Links</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./about.html">Bilury's Story</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./team.html">Team</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./news.html">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./contact.html">Contact Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./dashboard.html">My Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./rooms-1.html">Rooms &amp; Suites</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./spa-wellness.html">Spa &amp; Wellness</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./restaurant.html">Restaurant</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./tours-list.html">Booking tours</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-body link-hover-primary ps-0 pe-0"
+                                                href="./airpost-pickup.html">Airpost pickup</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Quick Links -->
+                    </div>
+                    <div class="footer__col-04">
+                        <div class="footer__content">
+                            <!-- Mobile App -->
+                            <div class="mb-6">
+                                <h5 class="">Get the app</h5>
+                                <div class="pt-4">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="" class="img-fluid" alt="">
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="" class="img-fluid" alt="">
+                                                </figure>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Mobile App -->
+                            <!-- Social -->
+                            <div class="mb-6">
+                                <h5 class="">Connect social</h5>
+                                <ul class="list-social-midia">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body link-hover-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-brand-facebook" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body link-hover-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-brand-twitter" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body link-hover-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-brand-youtube" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z">
+                                                </path>
+                                                <path d="M10 9l5 3l-5 3z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body link-hover-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-brand-pinterest" width="20" height="20"
+                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M8 20l4 -9"></path>
+                                                <path
+                                                    d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7">
+                                                </path>
+                                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body link-hover-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="icon icon-tabler icon-tabler-brand-tripadvisor" width="20"
+                                                height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M6.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0"></path>
+                                                <path d="M17.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0"></path>
+                                                <path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z"></path>
+                                                <path d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z"></path>
+                                                <path d="M10.5 15.5l1.5 2l1.5 -2"></path>
+                                                <path d="M9 6.75c2 -.667 4 -.667 6 0"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Social -->
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer__section-end">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p>© 2023 Emerson Marins. Todos os direitos reservados.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="text-start text-md-end">
+                                <ul class="row">
+                                    <li class="list-inline-item">
+                                        <a class="text-body link-hover-primary" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-body link-hover-primary" href="#">Terms of Use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/pages/js/index.js"></script>
+    <script>
+        const circle = document.querySelectorAll('.skills__circle');
+
+        function rotateCircle(num) {
+            let index = 0;
+            circle.forEach((element, contador) => {
+                console.log(num)
+                function loop(num) {
+
+                    if (index <= num[contador]) {
+                        let percentageCalc = (3.6 * index) + 90
+                        setTimeout(() => {
+
+                            if (index <= 50) {
+                                element.style.cssText = `background: linear-gradient(to right, transparent 50%, #100d19 50% ),
+                                linear-gradient(${percentageCalc}deg, #100d19 50%, #7f1be4 50%);`
+                                element.dataset.content = `${index}%`;
+                                console.log(index);
+                            } else if (index <= 100) {
+                                element.style.cssText = `background: linear-gradient(to left, transparent 50%, #7f1be4 50% ),
+                                linear-gradient(${percentageCalc}deg, #100d19 50%, #7f1be4 50%);`
+                                console.log(index)
+                                element.dataset.content = `${index}%`;
+                            }
+
+                            index++
+                            loop(num)
+
+                        }, 50);
+                    } else {
+                        return
+                    }
+
+                }
+                loop(num)
+
+            })
+        }
+
+
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,203 @@
+.section-portfolio {
+  position: relative;
+  /* background: rgb(36, 36, 36); */
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 210px;
+  width: 100vw;
+  height: auto;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-around;
+  width: 1140px;
+  margin: auto;
+  align-items: center;
+  color: white;
+}
+
+.portfolio-content-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 320px;
+
+}
+
+.portfolio-title-container{
+display: flex;
+/* background-color: black; */
+width: 120%;
+}
+
+.portfolio-title {
+  font-size: 35px;
+  font-family: 'Philosopher', sans-serif;
+  margin-bottom: 35px;
+}
+
+.portfolio-title>span {
+  position: relative;
+
+}
+
+.portfolio-title>span::before {
+  content: " ";
+  position: absolute;
+  top: -7px;
+  width: 70px;
+  height: 7px;
+  background: var(--color-background-cianoDark);
+  border-radius: 14px 0 0 14px;
+  font-size: inherit;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.portfolio-text {
+  width: calc(100vw / 2.8);
+  color: rgb(151, 151, 151);
+  margin-bottom: 35px;
+}
+
+.portfolio-text li::before {
+  font-family: "Font Awesome 5 free";
+  content: "\2713  ";
+  font-size: 21px;
+  color: aqua;
+}
+
+.portfolio-image {
+  max-width: inherit;
+  min-width: inherit;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 7px rgba(0, 0, 0, 0.145);
+  /* border: 2px dashed rgb(21, 255, 0); */
+  position: absolute;
+  transform: rotateY(-7deg);
+
+}
+
+.portfolio-image.last {
+  transform: rotateY(7deg);
+}
+
+
+.portfolio-image>img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  box-shadow: 0 0 21px 4px rgba(0, 0, 0, 0.786);
+
+}
+
+@keyframes scaleMouseEnter {
+  from {
+    transform: scale(1.0);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scaleMouseOut {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1.0);
+  }
+}
+
+.portfolio-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+  gap: 30px;
+  margin-top: 21px;
+}
+
+.portfolio-btn {}
+
+.btn {
+  display: inline;
+  background: transparent;
+  color: rgb(236, 236, 236);
+  border: 2px solid rgb(0, 201, 134);
+  height: 42px;
+  width: 210px;
+  border-radius: 21px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-repository {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.wrap-img {
+  max-width: 400px;
+  min-width: 360px;
+  height: 500px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+
+}
+
+.text-more {
+  overflow: hidden;
+  animation: hideText 2s ease-in-out both;
+}
+
+.text-show {
+  animation: showText 2s ease-in-out both;
+  /* position: relative; */
+  /* height: 0px; */
+  overflow: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+@keyframes showText {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 235px;
+  }
+}
+
+@keyframes hideText {
+  from {
+    height: 235px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
+.fa-github.icon {
+  font-size: 50px;
+  color: rgb(233, 233, 233);
+  border: 4px solid rgb(0, 255, 157);
+  border-radius: 14px;
+  padding: 14px;
+}

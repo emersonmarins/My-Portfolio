@@ -1,0 +1,215 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+/* :root {
+    --color-background:#1C1714;
+    --color-01:#C97636;
+    --color-02:#914B16;
+    --color-03:#003D45;
+    --color-04:#32DAF0;
+
+
+    --color-background2:#0e070c;
+    --color-background3:#1d1822;
+    --color-05:#36123B;
+    --color-06:#9539ff;
+    --color-07:#3D0045;
+    --color-08:#b479f8;
+    --color-09: #B53BC6;
+    --color-10: #34003B;
+    --color-11: #7f1be4;
+} */
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: var(--color-background-gradient-dark);
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 25px;
+    
+}
+
+.container::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+
+
+}
+/* linha inferior */
+/* .container:hover::before { 
+    box-shadow: 0 0px 3px 5px var(--color-text-01);
+    border-bottom: 3px solid var(--color-05);/
+    
+} */
+
+/* Logo */
+.logo {
+    display: flex;
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+/* Nav */
+.head {
+    display: none;
+}
+
+.menu > ul{
+    display: flex;
+}
+
+.container > .menu > ul > li:not(:last-child){
+    padding-right: 25px;
+}
+
+.container .menu > ul > .dropdown > a {
+    padding-right: 15px;
+}
+
+.container > .menu > ul > li > a{
+    display: block;
+    line-height: 1.5;
+    padding: 15px 0;
+    position: relative;
+}
+
+.container > .menu > ul > li > i {
+    position: absolute;
+    top: calc(50% - 5px);
+    transform: translate(-50%);
+}
+.container > .menu > ul > li > i {
+    right: 21px;
+}
+
+/* sub-menu */
+.sub_menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    padding: 30px;
+    width: 250px;
+    background-color: var(--color-background3);
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.233);
+    transition: .5s ease;
+    transition-delay: 125ms;
+}
+
+/* Effect Up arrow  */
+.sub_menu.up_arrow::after {
+
+content: " ";
+border: 14px solid  var(--color-background3);
+position: absolute;
+top: -7px;
+left: 25%;
+border-radius: 0 0 100%;
+transform: rotateZ(45deg);
+}
+
+
+.dropdown:hover > .sub_menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub_menu_right {
+    top: -25px;
+    left: 100%;
+    margin-left: 30px;
+}
+
+.sub_menu_left {
+    top: -25px;
+    left: -163%;
+    margin-left: 30px;
+}
+
+/* Sub Menu Effect  */
+
+.container .sub_menu > li > a > span {
+    background-image: linear-gradient(black, black);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease;
+    padding-bottom: 2px;
+}
+
+
+.container .sub_menu > li:hover > a > span {
+    background-size: 100% 3px;
+}
+
+/* Nav dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > i {
+    transform: rotateZ(-90deg);
+}
+
+.dropdown.left_arrow > i{
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    transform: rotateZ(90deg); 
+
+}
+
+/* Header right  */
+
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_right > button {
+    background: transparent;
+    border: none;
+
+}
+
+.header_right .fa-brands {
+    background: none;
+    color: rgb(228, 228, 228);
+    font-size: 28px;
+    align-self: center;
+}
+
+@keyframes scale {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) ;
+    }
+}

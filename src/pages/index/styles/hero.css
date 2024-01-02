@@ -1,0 +1,158 @@
+.introducing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  height: 837px;
+  max-width: var(--max-width);
+  margin: 60px auto 0;
+}
+
+/* INTRUDUCING LEFT */
+
+.introducing .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 49px;
+  max-width: calc(1170px / 2.7);
+}
+
+.introducing .left .title span {
+  /* display: inline; */
+  color: rgb(240, 240, 240);
+  font-size: var(--step--1);
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.introducing .left .title .bemvindo {
+  color: rgb(248, 248, 248);
+  background: var(--color-background-orangeDarkRight);
+  padding: 6px 4px 6px 21px;
+  border-radius: 14px 0 0 14px;
+  font-size: var(--step--1);
+  position: relative;
+}
+
+.introducing .left .title {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.introducing .left .title h1 {
+  font-size: var(--step-5);
+  color: rgb(255, 255, 255);
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 600;
+}
+
+.introducing .left .title > h1 > span {
+  color: var(--color-text-08);
+  font-size: inherit;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.introducing .left .title h1::after {
+  display: block;
+  content: ' ';
+  background: linear-gradient(to left, hsla(0, 0%, 100%, 0.034), hsla(0, 0%, 100%, 0.226), #ffffffe5);
+  width: 140px;
+  height: 4px;
+  margin-top: 3px;
+  animation-name: none;
+}
+
+
+.introducing .left .text {
+  color: rgb(168, 168, 168);
+}
+
+.introducing .left .technologies {
+  display: flex;
+  gap: 20px;
+  transition: .7s both;
+}
+
+.introducing .left .icons-t {
+  cursor: pointer;
+}
+
+.introducing .left .icons-t>i {
+  font-size: 40px;
+}
+
+.introducing .left .icons-t:hover {
+  animation: rotate 1.4s ease;
+
+}
+
+.introducing .left .icons-t:hover>i {
+  animation: rotate 1.4s ease;
+
+}
+
+
+
+/* SVG MONGO-DB */
+.fa-brands {
+  color: #ffffff;
+}
+
+#svg2 {
+  width: 140px;
+  height: auto;
+
+}
+
+#mongodb {
+  fill: rgb(245, 245, 245);
+  color: #003D45;
+  transition: 1.4s ease;
+
+}
+
+.icon-mongo-svg:hover .icon-mongo {
+  animation: rotate 1.4s both;
+  cursor: pointer;
+  transition: 1.4s ease;
+}
+
+.icon-mongo:hover #mongodb {
+  fill: var(--color-11);
+  transition: 1.4s ease;
+}
+
+
+/* INTRUDUCING RIGHT */
+
+.introducing .right {
+  display: flex;
+  max-width: calc(1170px / 2.5);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+    color: #ffffff;
+
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    color: #9539ff;
+  }
+}
+
+@keyframes scale-circle {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
